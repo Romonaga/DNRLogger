@@ -4,12 +4,8 @@
 #include <QString>
 #include <syslog.h>
 
-#if defined(DNRLOGGER_LIBRARY)
-#  define DNRLOGGER_LIBRARY Q_DECL_EXPORT
-#else
-#  define DNRLOGGER_LIBRARY Q_DECL_IMPORT
-#endif
-class DNRLOGGER_LIBRARY DNRLogger : public QObject
+
+class  DNRLogger : public QObject
 {
     Q_OBJECT
 

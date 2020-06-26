@@ -10,7 +10,8 @@ QMAKE_CXXFLAGS += -std=c++11
 
 TARGET = DNRLogger
 TEMPLATE = lib
-#CONFIG += staticlib
+
+CONFIG += staticlib
 
 SOURCES += dnrlogger.cpp
 
